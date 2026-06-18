@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paraná Travel Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌎 Paraná Travel Agency</h1>
+  <button id="darkModeBtn">Modo Escuro</button>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#destinos">Destinos</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h2>Viaje pelo Paraná com conforto e segurança</h2>
+    <p>Descubra experiências únicas com a nossa agência de turismo especializada.</p>
+    <button class="cta">Ver Pacotes</button>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <h2>Nossos Serviços</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60">
+      <h3>Turismo Ecológico</h3>
+      <p>Trilhas, natureza e experiências ao ar livre.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=60">
+      <h3>City Tour Curitiba</h3>
+      <p>Conheça os principais pontos da capital.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60">
+      <h3>Pacotes Personalizados</h3>
+      <p>Viagens feitas sob medida para você.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- DESTINOS -->
+<section id="destinos">
+  <h2>Destinos Populares</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=60">
+      <h3>Jardim Botânico</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1615397587950-3cbb55a0d2a3?auto=format&fit=crop&w=800&q=60">
+      <h3>Ópera de Arame</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601758123927-196d2a6e8d0b?auto=format&fit=crop&w=800&q=60">
+      <h3>Ilha do Mel</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos">
+  <h2>O que nossos clientes dizem</h2>
+
+  <div class="testimonials">
+
+    <div class="testimonial">
+      <p>"A melhor experiência de viagem que já tive!"</p>
+      <span>- Ana Paula</span>
+    </div>
+
+    <div class="testimonial">
+      <p>"Muito organizado e seguro. Recomendo!"</p>
+      <span>- Carlos Henrique</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <h2>Contato</h2>
+
+  <form id="form">
+    <input type="text" placeholder="Nome completo" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Descreva sua viagem dos sonhos"></textarea>
+    <button type="submit">Solicitar orçamento</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Paraná Travel Agency - Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- MODAL (IMAGEM EM TELA CHEIA) -->
+<div id="modal" class="modal">
+  <img id="modalImg">
+</div>
+<section id="depoimentos">
+  <h2>O que nossos clientes dizem</h2>
+
+  <div class="testimonials">
+
+    <div class="testimonial">
+      <p>"A experiência foi incrível! Tudo muito organizado e seguro. Recomendo demais a Paraná Travel Agency."</p>
+      <span>— Ana Paula, Curitiba</span>
+    </div>
+
+    <div class="testimonial">
+      <p>"Fiz o city tour em Curitiba e foi perfeito. Guia muito atencioso e roteiro completo."</p>
+      <span>— Carlos Henrique, São Paulo</span>
+    </div>
+
+    <div class="testimonial">
+      <p>"A Ilha do Mel é simplesmente maravilhosa. A agência cuidou de tudo do início ao fim."</p>
+      <span>— Mariana Souza, Londrina</span>
+    </div>
+
+    <div class="testimonial">
+      <p>"Melhor agência de turismo que já usei. Preço justo e serviço de qualidade."</p>
+      <span>— João Victor, Florianópolis</span>
+    </div>
+
+    <div class="testimonial">
+      <p>"Passeio ecológico perfeito! Contato direto com a natureza e muita segurança."</p>
+      <span>— Beatriz Lima, Curitiba</span>
+    </div>
+
+  </div>
+</section>
+<section id="depoimentos">
+  <h2>O que nossos clientes dizem</h2>
+
+  <div class="testimonials">
+
+    <div class="testimonial clickable" data-text="A experiência foi incrível! Tudo muito organizado e seguro. Recomendo demais a Paraná Travel Agency. — Ana Paula, Curitiba">
+      <p>"A experiência foi incrível! Clique para ler mais."</p>
+      <span>— Ana Paula</span>
+    </div>
+
+    <div class="testimonial clickable" data-text="Fiz o city tour em Curitiba e foi perfeito. Guia muito atencioso e roteiro completo. — Carlos Henrique, São Paulo">
+      <p>"City tour em Curitiba foi perfeito! Clique para ler mais."</p>
+      <span>— Carlos Henrique</span>
+    </div>
+
+    <div class="testimonial clickable" data-text="A Ilha do Mel é simplesmente maravilhosa. A agência cuidou de tudo do início ao fim, foi uma viagem inesquecível. — Mariana Souza, Londrina">
+      <p>"Ilha do Mel inesquecível! Clique para ler mais."</p>
+      <span>— Mariana Souza</span>
+    </div>
+
+    <div class="testimonial clickable" data-text="Melhor agência de turismo que já usei. Preço justo e serviço de qualidade do início ao fim. — João Victor, Florianópolis">
+      <p>"Serviço excelente! Clique para ler mais."</p>
+      <span>— João Victor</span>
+    </div>
+
+  </div>
+</section>
+<section id="depoimentos">
+  <h2>O que nossos clientes dizem</h2>
+
+  <div class="testimonial-container">
+
+    <div class="testimonial active">
+      <p id="depText">"A experiência foi incrível! Tudo muito organizado e seguro."</p>
+      <span id="depName">— Ana Paula, Curitiba</span>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+    </div>
+
+  </div>
+</section>
+<section id="pacotes">
+  <h2>Pacotes de Viagem</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60">
+      <h3>Curitiba Completa</h3>
+      <p>City tour + Jardim Botânico + Ópera de Arame</p>
+      <strong>R$ 299</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601758123927-196d2a6e8d0b?auto=format&fit=crop&w=800&q=60">
+      <h3>Ilha do Mel</h3>
+      <p>Transporte + hospedagem + passeio guiado</p>
+      <strong>R$ 499</strong>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1615397587950-3cbb55a0d2a3?auto=format&fit=crop&w=800&q=60">
+      <h3>Aventura Natureza</h3>
+      <p>Trilhas, cachoeiras e turismo ecológico</p>
+      <strong>R$ 399</strong>
+    </div>
+
+  </div>
+</section>
+<a class="whatsapp" href="https://wa.me/5541999999999" target="_blank">
+  💬 Fale no WhatsApp
+</a>
